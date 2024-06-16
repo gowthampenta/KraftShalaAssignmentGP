@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url("https://res.cloudinary.com/dzbev5zdy/image/upload/v1718467853/weatherImage_ru1vwv.jpg");
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-height: 88vh;
+}
+
+h1 {
+  color: black;
+  font-weight: bold;
+}
+
+.form-control {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-primary,
+.btn-secondary {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.card {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.card h2,
+.card p {
+  margin: 10px 0;
+}
+
+#location {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#temperature {
+  font-size: 22px;
+  color: #007bff;
+}
+
+#datetime,
+#description,
+#humidity,
+#wind-speed {
+  font-size: 18px;
+  color: black;
+}
+
+.warning {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: #eee;
+}
+
+.dark-mode .container {
+  background-color: black;
+  color: #eee;
+  background-image: none;
+}
+
+.dark-mode .card {
+  background-color: #555;
+  color: #ddd;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode h1,
+.dark-mode #location,
+.dark-mode #temperature,
+.dark-mode #datetime,
+.dark-mode #description,
+.dark-mode #humidity,
+.dark-mode #wind-speed {
+  color: #ddd;
+}
+
+.dark-mode .warning {
+  color: red;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 20px;
+  }
+
+  .form-control {
+    width: calc(100% - 20px);
+    font-size: 16px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  #location {
+    font-size: 24px;
+  }
+
+  #temperature {
+    font-size: 22px;
+  }
+
+  #datetime,
+  #description,
+  #humidity,
+  #wind-speed {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 992px;
+    padding: 20px;
+  }
+
+  .form-control {
+    width: calc(100% - 20px);
+    font-size: 16px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  #location {
+    font-size: 22px;
+  }
+
+  #temperature {
+    font-size: 20px;
+  }
+
+  #datetime,
+  #description,
+  #humidity,
+  #wind-speed {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    max-width: 768px;
+  }
+
+  .form-control {
+    width: calc(100% - 10px);
+    font-size: 14px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  #location {
+    font-size: 20px;
+  }
+
+  #temperature {
+    font-size: 18px;
+  }
+
+  #datetime,
+  #description,
+  #humidity,
+  #wind-speed {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+    max-width: 480px;
+  }
+
+  .form-control {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  #location {
+    font-size: 18px;
+  }
+
+  #temperature {
+    font-size: 16px;
+  }
+
+  #datetime,
+  #description,
+  #humidity,
+  #wind-speed {
+    font-size: 14px;
+  }
+}
